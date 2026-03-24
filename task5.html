@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+</head>
+<body>
+<h2>Sign Up Form</h2>
+<form action="#" method="get">
+<fieldset>
+<legend>Personal Information</legend>
+<label>Full Name:</label><br>
+<input type="text" name="fullname" required minlength="3" maxlength="30">
+<br><br>
+<label>Email:</label><br>
+<input type="email" name="email" required autocomplete="email">
+<br><br>
+<label>Password:</label><br>
+<input type="password" name="password" required minlength="8">
+<br><br>
+<label>Phone:</label><br>
+<input type="tel" name="phone" placeholder="Enter your phone number">
+<br><br>
+<label>Website:</label><br>
+<input type="url" name="website">
+<br><br>
+<label>Birth Date:</label><br>
+<input type="date" name="birthdate" min="1990-01-01" max="2025-12-31">
+<br><br>
+</fieldset>
+<fieldset>
+<legend>Additional Information</legend>
+<label>Gender:</label><br>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="other"> Other
+<br><br>
+<label>Subscribe to Newsletter:</label>
+<input type="checkbox" name="newsletter">
+<br><br>
+<label>Country:</label><br>
+<select name="country">
+<option value="egypt">Egypt</option>
+<option value="usa">USA</option>
+<option value="uk">UK</option>
+<option value="germany">Germany</option>
+</select>
+<br><br>
+<label>Favorite Language:</label><br>
+<input list="languages" name="language">
+<datalist id="languages">
+<option value="HTML">
+<option value="CSS">
+<option value="JavaScript">
+<option value="Python">
+<option value="C++">
+</datalist>
+</fieldset>
+<br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</body>
+</html>
